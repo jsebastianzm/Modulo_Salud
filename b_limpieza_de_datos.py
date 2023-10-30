@@ -25,9 +25,9 @@ pd.set_option('display.max_columns', None)
 
 """# Cargar base de datos"""
 
-df_cronicos = pd.read_csv('datos\RETO_df_cronicos.csv')
-df_egresos = pd.read_csv('datos\RETO_df_egresos.csv')
-df_usuarios = pd.read_csv('datos\RETO_df_usuarios.csv')
+df_cronicos = pd.read_csv('RETO_df_cronicos.csv')
+df_egresos = pd.read_csv('RETO_df_egresos.csv')
+df_usuarios = pd.read_csv('RETO_df_usuarios.csv')
 
 # df_cronicos = pd.read_csv('/content/drive/MyDrive/Cursos de analitica/Analitica 3/Salud/Datos/RETO_df_cronicos.csv')
 # df_egresos = pd.read_csv('/content/drive/MyDrive/Cursos de analitica/Analitica 3/Salud/Datos/RETO_df_egresos.csv')
@@ -484,4 +484,4 @@ df_resultado["FECHA"] = df_resultado["FECHA"].dt.to_timestamp()
 dtale.show(df_resultado) #Se crea un dtale, este permite hacer una mejor exploracion de los datos, aplicando filtros, graficos
 
 # # Guardar el DataFrame en un archivo CSV
-# df_resultado.to_csv('datos_resultado.csv', index=False)
+df_resultado.to_csv('datos_resultado.csv', index=False)
